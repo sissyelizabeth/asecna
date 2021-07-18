@@ -57,7 +57,8 @@
           return actions.payment.execute().then(function(details){
               window.alert('Thank ypu for your purchase')
               console.log(data)
-              console.log(details);
+              console.log(details.cart);
+              
           })
         }
       }, '#paypal-button');

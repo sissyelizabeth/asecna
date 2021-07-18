@@ -1,44 +1,18 @@
 @extends('index')
 
 @section('content-dashboard')
-    <h1>List dossier meteo</h1>
+    <h1>Dossier méteo</h1>
     <div class="container py-4">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             <br>
-            <div style="margin: 0px 0 25px 0">
-                <a href="{{ route('plan-de-vol-form') }}" class="btn btn-primary">Nouveau</a>
+            <div class="mt-2">
+            <img src="{{ asset('images/cartemeteo1.jpg') }}" />
             </div>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            
+            <div class="col-md-12 mt-2 text-center">
+            <img src="{{ asset('images/cartemeteo2.jfif') }}" class="ml-2"/>
+            <img src="{{ asset('images/cartemeteo3.jfif') }}" class="ml-2"/>
+            </div>
         </div>
     </div>
 @endsection

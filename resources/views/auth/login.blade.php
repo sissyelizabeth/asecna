@@ -4,10 +4,14 @@
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
+          
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header bg-primary text-white">{{ __('Login') }}</div>
 
                 <div class="card-body">
+                <div class="text-center mb-5">
+            <img src="{{ asset('images/logoasecna.png') }}" width="10%" />
+            </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -38,24 +42,11 @@
                                     </span>
                                 @enderror
                             </div>
-                    <div>        
-                        <div class="form-group row">
-                            <label for="compagnie" class="col-md-4 col-form-label text-md-right">{{ __('Compagnie') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="compagnie" type="compagnie" class="form-control @error('compagnie') is-invalid @enderror" name="compagnie" required autocomplete="compagnie" autofocus>
-
-                                @error('compagnie')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>    
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
+                            </div>   
+                        <div class="form-group row ">
+                        
+                            <div class="col-md-8 offset-md-4">
+                                <div class="form-check  text-center">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
@@ -63,6 +54,7 @@
                                     </label>
                                 </div>
                             </div>
+                        
                         </div>
 
                         <div class="form-group row mb-0">
@@ -77,6 +69,7 @@
                                     </a>
                                 @endif
                             </div>
+                        </div>
                         </div>
                     </form>
                 </div>

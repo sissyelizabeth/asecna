@@ -23,9 +23,9 @@
             <!-- Sidebar -->
 
     </div>
-    <div class="col-md-8">
+    <div class="col-md-10">
         <div class="container py-4">
-            <div class="wrapper" style="width: 100%; background: #fff">
+            <div class="wrapper" style=" background: #fff">
                 @yield('content-dashboard')
             </div>
         </div>

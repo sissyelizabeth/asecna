@@ -36,3 +36,8 @@ Route::post('/plan-de-vol/form/add', 'PlanDeVolController@add')->name('plan-de-v
 Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
 Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
 Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
+
+Route::get('paiement', 'PaiementController@index');
+Route::post('charge', 'PaiementController@charge');
+Route::get('paiementsuccess', 'PaiementController@paiement_success');
+Route::get('paiementerror', 'PaiementController@paiement_error'); 
