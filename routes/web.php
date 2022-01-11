@@ -32,7 +32,6 @@ Route::get('/user-management/form', 'UserManagementController@form')->name('user
 
 Route::post('/plan-de-vol/form/add', 'PlanDeVolController@add')->name('plan-de-vol-add');
 
-
 Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
 Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
 Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
